@@ -1,0 +1,63 @@
+name: vultra_clean
+description: "Vultra - Profesyonel Finans Takibi"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.6 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # --- UI & TASARIM ---
+  cupertino_icons: ^1.0.2
+  google_fonts: 6.1.0
+  fl_chart: ^0.66.0
+  font_awesome_flutter: 10.7.0 
+  
+  # --- VERİ VE DEPOLAMA ---
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.2.3
+  intl: ^0.18.1 
+  http: ^1.1.0
+
+  # --- BİLDİRİM VE CİHAZ ---
+  flutter_local_notifications: ^18.0.1
+  url_launcher: ^6.3.0
+  image_picker: ^1.0.8
+
+  # --- AUTHENTICATION (KİMLİK DOĞRULAMA) ---
+  firebase_core: ^2.27.0
+  firebase_auth: ^4.17.8
+  google_sign_in: ^6.2.1
+  sign_in_with_apple: ^5.0.0 # App Store için ZORUNLU (Reddedilmeyi önler)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.8
+  flutter_lints: ^2.0.0
+  
+  # İkon Oluşturucu
+  flutter_launcher_icons: ^0.13.1
+
+# --- UYGULAMA İKON AYARLARI ---
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logos/app_icon.png"
+  min_sdk_android: 21 
+  adaptive_icon_background: "#0A0A0A" 
+  adaptive_icon_foreground: "assets/logos/app_icon.png"
+  remove_alpha_ios: true # Apple Store için şeffaflığı kaldırır
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logos/
