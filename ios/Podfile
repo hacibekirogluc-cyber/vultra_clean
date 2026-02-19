@@ -1,3 +1,4 @@
+# Codemagic guncelleme zorlama satiri
 platform :ios, '13.0'
 
 # CocoaPods istatistiklerini kapat
