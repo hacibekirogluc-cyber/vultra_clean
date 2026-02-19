@@ -22,6 +22,19 @@
     <string>$(FLUTTER_BUILD_NAME)</string>
     <key>CFBundleSignature</key>
     <string>????</string>
+    <key>CFBundleVersion</key>
+    <string>$(FLUTTER_BUILD_NUMBER)</string>
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    <key>UIApplicationSupportsIndirectInputEvents</key>
+    <true/>
+    <key>UILaunchStoryboardName</key>
+    <string>LaunchScreen</string>
+    <key>UIMainStoryboardFile</key>
+    <string>Main</string>
+    <key>UIUserInterfaceStyle</key>
+    <string>Dark</string>
+
     <key>CFBundleURLTypes</key>
     <array>
         <dict>
@@ -33,16 +46,16 @@
             </array>
         </dict>
     </array>
-    <key>CFBundleVersion</key>
-    <string>$(FLUTTER_BUILD_NUMBER)</string>
-    <key>LSRequiresIPhoneOS</key>
-    <true/>
-    <key>UIApplicationSupportsIndirectInputEvents</key>
-    <true/>
-    <key>UILaunchStoryboardName</key>
-    <string>LaunchScreen</string>
-    <key>UIMainStoryboardFile</key>
-    <string>Main</string>
+
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Vultra, profil fotoğrafınızı kişiselleştirmeniz için galerinize güvenli bir şekilde erişim sağlar.</string>
+    <key>NSCameraUsageDescription</key>
+    <string>Vultra, profil fotoğrafınızı doğrudan çekip ekleyebilmeniz için kameranızı kullanır.</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Vultra, uygulama içindeki medya özellikleri için mikrofon erişimi gerektirebilir.</string>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>Vultra, düzenlediğiniz veya oluşturduğunuz görselleri galerinize kaydetmenize olanak tanır.</string>
+
     <key>UISupportedInterfaceOrientations</key>
     <array>
         <string>UIInterfaceOrientationPortrait</string>
@@ -54,17 +67,5 @@
         <string>UIInterfaceOrientationLandscapeLeft</string>
         <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
-
-    <key>NSPhotoLibraryUsageDescription</key>
-    <string>Vultra, profil fotoğrafınızı kişiselleştirmeniz için galerinize güvenli bir şekilde erişim sağlar.</string>
-    <key>NSCameraUsageDescription</key>
-    <string>Vultra, profil fotoğrafınızı doğrudan çekip ekleyebilmeniz için kameranızı kullanır.</string>
-    <key>NSMicrophoneUsageDescription</key>
-    <string>Vultra, uygulama içindeki medya özellikleri için mikrofon erişimi gerektirebilir.</string>
-    <key>NSPhotoLibraryAddUsageDescription</key>
-    <string>Vultra, düzenlediğiniz veya oluşturduğunuz görselleri galerinize kaydetmenize olanak tanır.</string>
-
-    <key>UIUserInterfaceStyle</key>
-    <string>Dark</string> 
 </dict>
 </plist>
