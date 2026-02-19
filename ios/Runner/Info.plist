@@ -55,6 +55,13 @@
     <string>Vultra, uygulama içindeki medya özellikleri için mikrofon erişimi gerektirebilir.</string>
     <key>NSPhotoLibraryAddUsageDescription</key>
     <string>Vultra, düzenlediğiniz veya oluşturduğunuz görselleri galerinize kaydetmenize olanak tanır.</string>
+    
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>Uygulama yerel ağ servislerini kullanır.</string>
+    <key>NSBonjourServices</key>
+    <array>
+        <string>_dartobservatory._tcp</string>
+    </array>
 
     <key>UISupportedInterfaceOrientations</key>
     <array>
