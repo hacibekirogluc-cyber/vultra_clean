@@ -1,6 +1,7 @@
-platform :ios, '14.0'
+# En az iOS 13.0 hedefliyoruz, Firebase için şart
+platform :ios, '13.0'
 
-# CocoaPods analytics kapatır, hızlandırır
+# CocoaPods'u hızlandırır
 ENV['COCOAPODS_DISABLE_STATS'] = 'true'
 
 project 'Runner', {
@@ -25,6 +26,7 @@ end
 require File.expand_path(File.join('packages', 'flutter_tools', 'bin', 'podhelper'), flutter_root)
 
 target 'Runner' do
+  # Firebase ve yeni Xcode için bu ikisi ŞART
   use_frameworks!
   use_modular_headers!
 
@@ -35,12 +37,13 @@ post_install do |installer|
   installer.pods_project.targets.each do |target|
     flutter_additional_ios_build_settings(target)
     
-    # --- İŞTE BU KISIM HATAYI ÇÖZECEK ---
+    # --- İŞTE BU KISIM O KIRMIZI HATAYI YOK EDECEK ---
     target.build_configurations.each do |config|
+      # Hata veren başlık dosyalarını görmezden gel
       config.build_settings['CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = 'YES'
-      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '14.0'
+      # iOS sürümünü zorla 13.0 yap (uyumsuzluk kalmasın)
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
     end
-    # ------------------------------------
-    
+    # -------------------------------------------------
   end
 end
